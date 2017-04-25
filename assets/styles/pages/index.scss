@@ -1,0 +1,18 @@
+@charset 'UFT-8';
+
+h1 {
+ color: red;
+
+ @include responsive(small) {
+     color: blue;
+     font-size: font-size(big);
+ }
+
+ @include responsive(medium) {
+   color: green;
+ }
+
+ @include responsive(large) {
+   color: yellow;
+ }
+}
