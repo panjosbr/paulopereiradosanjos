@@ -5,5 +5,4 @@
 .DS_Store
 .cache
 
-assets/styles/*.css
 assets/styles/*.css.map
