@@ -3,14 +3,15 @@
 /// @group    Variáveis
 
 $base-font-size: 16px;
+$website-max-width: 960px;
 
 // Mapa de breakpoints
 $breakpoints: (
-  mini    : 320px,
-  small   : 480px,
-  medium  : 768px,
-  large   : 1024px,
-  xlarge  : 1280px
+  xsmall    : 320px,
+  small     : 480px,
+  medium    : 768px,
+  large     : 1024px,
+  xlarge    : 1280px
 ) !default;
 
 $font-sizes: (
