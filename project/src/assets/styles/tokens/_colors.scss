@@ -1,0 +1,72 @@
+// map created from base color #2D9AFA - https://color.adobe.com/pt/create
+
+$colors: (
+  main: (
+    c1: #2E9BFA,
+    c2: #0E63AD,
+    c3: #FA4E46,
+    c4: #ECFA14,
+    c5: #A4AD17
+  ),
+  analogue: (
+    c1: #2122FD,
+    c2: #1E53E3,
+    c3: #2D9AFA,
+    c4: #1EBBE3,
+    c5: #21FDEF
+  ),
+  monochrome: (
+    c1: #164C7A,
+    c2: #78BEFB,
+    c3: #2D9AFA,
+    c4: #3B5D7A,
+    c5: #247BC7
+  ),
+  complementary: (
+    c1: #1064AD,
+    c2: #47A9FF,
+    c3: #2D9AFA,
+    c4: #AD6B00,
+    c5: #FAAB2D,
+  ),
+  complementary-split: (
+    c1: #AD5B31,
+    c2: #FA7A39,
+    c3: #2D9AFA,
+    c4: #AD900E,
+    c5: #FAD220,
+  ),
+  complementary-split-twice: (
+    c1: #393BFA,
+    c2: #FA8246,
+    c3: #2D9AFA,
+    c4: #FAD014,
+    c5: #20FAEC,
+  ),
+  square: (
+    c1: #148FFA,
+    c2: #FA46DE,
+    c3: #2D9AFA,
+    c4: #FAD014,
+    c5: #55FA20,
+  ),
+  compound: (
+    c1: #1011C7,
+    c2: #565694,
+    c3: #2D9AFA,
+    c4: #FBB16C,
+    c5: #C74D10,
+  ),
+  shadow: (
+    c1: #164C7A,
+    c2: #78BEFB,
+    c3: #2D9AFA,
+    c4: #3B5D7A,
+    c5: #247BC7
+  ),
+);
+
+@function color($name, $variant) {
+  $color: map-get(map-get($colors, $name), $variant);
+  @return $color;
+}
